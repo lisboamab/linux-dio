@@ -27,14 +27,13 @@ useradd -m -G GRP_ADM -p $(openssl passwd -crypt Senha123) -s /bin/bash joao
 useradd -m -G GRP_ADM -p $(openssl passwd -crypt Senha123) -s /bin/bash maria
 
 #Vendas
-useradd debora -m -s /bin/bash -G GRP_VEN -p $(openssl passwd -crypt Senha123) -e
-useradd sebastiana -m -s /bin/bash -G GRP_VEN -p $(openssl passwd -crypt Senha123) -e
-useradd roberto -m -s /bin/bash -G GRP_VEN -p $(openssl passwd -crypt Senha123) -e
+useradd -m -G GRP_VEN -p $(openssl passwd -crypt Senha123) -s /bin/bash debora
+useradd -m -G GRP_VEN -p $(openssl passwd -crypt Senha123) -s /bin/bash sebastiana
+useradd -m -G GRP_VEN -p $(openssl passwd -crypt Senha123) -s /bin/bash roberto
 
 #SEC
-useradd josefina -m -s /bin/bash -G GRP_SEC -p $(openssl passwd -crypt Senha123) -e
-useradd amanda -m -s /bin/bash -G GRP_SEC -p $(openssl passwd -crypt Senha123) -e
-useradd rogerio -m -s /bin/bash -G GRP_SEC -p $(openssl passwd -crypt Senha123) -e
-
+useradd -m -G GRP_SEC -p $(openssl passwd -crypt Senha123) -s /bin/bash josefina
+useradd -m -G GRP_SEC -p $(openssl passwd -crypt Senha123) -s /bin/bash amanda
+useradd -m -G GRP_SEC -p $(openssl passwd -crypt Senha123) -s /bin/bash rogerio
 
 echo "Fim..."
