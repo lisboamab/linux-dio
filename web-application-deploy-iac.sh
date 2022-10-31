@@ -26,7 +26,7 @@ echo "Baixando a aplicação linux-site-dio no /tmp ..."
 wget -P /tmp https://github.com/denilsonbonatti/linux-site-dio/archive/refs/heads/main.zip
 
 #Deszipando os arquivos
-unzip main.zip -d /tmp/
+unzip /tmp/main.zip -d /tmp/
 
 #Copiando os arquivos para a pasta do apache
 echo "Subindo os arquivos para o servidor..."
