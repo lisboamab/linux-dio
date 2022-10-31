@@ -2,8 +2,8 @@
 
 #Atualiza o servidor
 echo "Atualizando o servidor..."
-apt update -y
-apt upgrade -y
+apt-get update -y
+apt-get upgrade -y
 
 #Instala o apache2
 echo "Instalando o Apache..."
