@@ -23,10 +23,10 @@ mkdir /tmp
 echo "Baixando a aplicação linux-site-dio no /tmp ..."
 
 #wget é uma aplicação de download e o parametro -P serve para difinir o caminho do download
-wget -P /tmp -O linux-site-dio.zip https://github.com/denilsonbonatti/linux-site-dio/archive/refs/heads/main.zip
+wget -P /tmp https://github.com/denilsonbonatti/linux-site-dio/archive/refs/heads/main.zip
 
 #Deszipando os arquivos
-unzip linux-site-dio.zip
+unzip main.zip -d /tmp/
 
 #Copiando os arquivos para a pasta do apache
 echo "Subindo os arquivos para o servidor..."
