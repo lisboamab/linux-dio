@@ -3,6 +3,7 @@
 #instala o docker
 curl -fsSl https://get.docker.com -o /tmp-docker/get-docker.sh --create-dirs
 sh /tmp-docker/get-docker.sh
+rm -f -r  /tmp-docker
 
 #cria um grupo para usuarios do docker
 groupadd docker_users
